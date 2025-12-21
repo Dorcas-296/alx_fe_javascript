@@ -2,12 +2,12 @@ const quoteDisplay = document.getElementById("quoteDisplay");
 const button = document.getElementById("newQuote");
 
 const quotes = [
-    { text:"believe in yourself.", category: "motivation" }
-    { text: "know one knows tomorrow.", category: "inspiration" }
+    { text:"believe in yourself.", category: "motivation" },
+    { text: "know one knows tomorrow.", category: "inspiration" },
     { text: "You can begin where you are.", category: "motivation" }
 ];
 button.addEventListener("click", function showRandomQuote() {
-    const ransomIndex = Math.floor(Math.random() * quotes.length);
+    const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     quoteDisplay.innerHTML = `"${quote.text}" <br> <small>Category: ${quote.category}</small>`;
 })
