@@ -6,7 +6,7 @@ const quotes = [
     { text: "know one knows tomorrow.", category: "inspiration" },
     { text: "You can begin where you are.", category: "motivation" }
 ];
-function showRandomQuote() {
+function displayRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     quoteDisplay.innerHTML = `"${quote.text}" <br> <small>Category: ${quote.category}</small>`;
@@ -27,9 +27,11 @@ function addQuote() {
 
     quotes.push(newQuote);
 
+    quoteDisplay.innerHTML = `"${newQuote.text}" <br> <small>Category: ${newQuote.caategory}</small>`;
+
     newQuoteText.value = "";
     newQuoteCategory.value = "";
     console.log("Quote added:", newQuote);
-}
+    }
 }
 addQuoteBtn.addEventListener("click", addQuote);
