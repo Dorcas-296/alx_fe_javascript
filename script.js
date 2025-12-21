@@ -31,7 +31,8 @@ function addQuote() {
 
     newQuoteText.value = "";
     newQuoteCategory.value = "";
-    console.log("Quote added:", newQuote);
+    } else {
+        alert("please fill in both fields!");
     }
 }
 addQuoteBtn.addEventListener("click", addQuote);
