@@ -1,0 +1,1 @@
+The repository contains what I learnt on dom-manipulation, web storage and working with JSON data.
