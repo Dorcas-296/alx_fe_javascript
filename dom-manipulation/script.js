@@ -10,7 +10,7 @@ const quotes = [
     { text: "You can begin where you are.", category: "Motivation" }
 ];
 
-function displayRandomQuote() {
+function showRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     quoteDisplay.innerHTML = `"${quote.text}" <br> <small>Category: ${quote.category}</small>`;
