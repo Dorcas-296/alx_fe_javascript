@@ -29,5 +29,5 @@ function addQuote() {
     }
 }
 
-button.addEventListener("click", displayRandomQuote);
+button.addEventListener("click", showRandomQuote);
 addQuoteBtn.addEventListener("click", addQuote);
